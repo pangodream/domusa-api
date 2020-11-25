@@ -15,7 +15,10 @@ class Domusa {
     constructor() {
 
     }
-    async login(host, user, password) {
+    async login(user, password, host = null) {
+        if (host == null) {
+            host = "wifi.in-ar.it";
+        }
         this.mydomo.api_root = `http://${host}/MyDOMO/v1/api/Android`;
         try {
             const response = await axios.get(this.mydomo.api_root + `/users/login/username/${user}/password/${password}/odm_code/190`);
@@ -156,7 +159,6 @@ class Domusa {
         }
     }
 }
-
 module.exports = {
     Domusa
 }

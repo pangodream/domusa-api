@@ -13,7 +13,7 @@ const CFG_PASS = process.env.CFG_PASS || "MyDomoPassword";
 test();
 
 async function test() {
-    if (await dm.login("wifi.in-ar.it", CFG_USER, CFG_PASS) == true) {
+    if (await dm.login(CFG_USER, CFG_PASS) == true) {
         const td = await dm.thermostatsData();
         console.log(td);
         const bs = await dm.boilerStatus();

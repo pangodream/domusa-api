@@ -1,0 +1,21 @@
+{
+  "name": "no-domusa-api",
+  "version": "1.0.0",
+  "description": "Non official Domusa Technik boilers API",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "domusa",
+    "technik",
+    "boiler",
+    "api"
+  ],
+  "author": "Pangodream",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "moment": "^2.29.1"
+  }
+}

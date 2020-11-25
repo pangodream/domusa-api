@@ -1,0 +1,2 @@
+process.env.CFG_USER = "MyUserInConfigFile";
+process.env.CFG_PASS = "MyPasswordInConfigFile";

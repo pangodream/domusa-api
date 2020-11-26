@@ -29,7 +29,7 @@ class Domusa {
                 this.mydomo.thermostat_id = response.data.message.wifi_boxes[0].thermostats[0].id;
                 this.mydomo.port = response.data.message.wifi_boxes[0].port;
                 this.mydomo.host = response.data.message.wifi_boxes[0].host;
-                console.log(this.mydomo);
+                //console.log(this.mydomo);
                 await this.bindClientUser();
                 return true;
             } else {
@@ -38,6 +38,9 @@ class Domusa {
         } catch (err) {
             return false;
         }
+    }
+    async getInfo() {
+        return this.mydomo;
     }
     async bindClientUser() {
         try {
